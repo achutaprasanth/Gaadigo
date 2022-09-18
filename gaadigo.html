@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <title>CAR REGISTRATION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+</html>
+<style>
+  body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: rgb(92, 173, 150);
+  }
+
+  .container {
+    padding: 50px;
+    background-color: rgb(242, 233, 233);
+  }
+
+  input[type=text],
+  input[type=password],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 3px solid rgb(57, 130, 94);
+    background: #e9faf9;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: rgb(196, 138, 31);
+    outline: none;
+  }
+
+  div {
+    padding: 14px 0;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  .registerbtn {
+    background-color: #37bc96;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .registerbtn:hover {
+    opacity: 1;
+  }
+</style>
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <left>
+        <h1>GAADIGO</h1>
+      </left>
+      <center>
+        <h2> VEHICLE REGISTRATION</h2>
+      </center>
+      <hr>
+      <label> NAME OF OWNER </label>
+      <input type="text" name="NAME OF OWNER" placeholder="NAME" size="15" required />
+      <label> CAR BRAND: </label>
+      <input type="text" name="COMPANY OF CAR" placeholder="Ex.SKODA" size="15" required />
+      <label> CAR MODEL: </label>
+      <input type="text" name="CAR MODEL" placeholder="MODEL" size="15" required />
+      <label> FUEL USED: </label>
+      <input type="text" name="LICENCE NO." placeholder="Ex.TNCZ348866" size="15" required />
+      <label> KILOMETERS RAN: </label>
+      <input type="number" name="KILOMETERS COVERED" placeholder="KILOMETERS" size="15" required />
+
+
+      <div>
+        <label>
+          CATEGORY OF VEHICLE :
+        </label>
+
+        <select>
+          <option value="Sedan">Sedan</option>
+          <option value="Hatchback">Hatchback</option>
+          <option value="SUV-'Sports Utility Vehicle'">SUV-'Sports Utility Vehicle</option>
+          <option value="Pick-Up Truck">Pick-Up Truck</option>
+          <option value="Coupe">Coupe</option>
+        </select>
+      </div>
+      <div>
+        <label>
+          FUEL USED:
+        </label><br>
+        <input type="radio" value="Petrol" name="Petrol" checked> Petrol
+        <input type="radio" value="Diesel" name="Diesel"> Diesel
+        <input type="radio" value="Other" name="Electric"> Other
+
+      </div>
+    </label>
+    
+    <p>Click on the "Choose File" button to upload an image:</p>
+
+    <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    
+    </form>  
+    </label>
+      
+      <label>
+      PHONE:
+      <input type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+      <input type="text" name="phone" placeholder="PHONE NO." size="10" / required>
+      CURRENT ADDRESS :
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+</label>
+      <label for="email"><b>EMAIL</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="SUBMIT">SUBMIT</button>
+      </div>
+
+  </form>
+</body>
+
+</html>
